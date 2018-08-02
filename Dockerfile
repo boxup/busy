@@ -1,4 +1,4 @@
-FROM node:10-alpine
+FROM node:8-alpine
 
 ENV NPM_CONFIG_LOGLEVEL warn
 
@@ -19,7 +19,7 @@ RUN npm install --global pm2
 WORKDIR /app
 
 # Bundle APP files
-ADD package.json yarn.lock /app/
+ADD package.json /app/
 
 # Install app dependencies
 RUN yarn
