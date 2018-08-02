@@ -7,6 +7,7 @@ ENV STEEMJS_URL=https://api.steemit.com
 ENV SIGNUP_URL=https://signup.steemit.com/?ref=casteem
 
 #RUN npm config set unsafe-perm true
+RUN npm config set unsafe-perm true
 RUN npm i npm@latest -g
 # Install pm2
 RUN npm install --global yarn
