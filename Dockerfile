@@ -26,7 +26,7 @@ COPY . /app/
 RUN yarn build
 
 # Expose the listening port of your app
-EXPOSE 80 443 8082 3000 43554
+EXPOSE 80 443 3000 43554
 
 # Show current folder structure in logs
 CMD [ "pm2-runtime", "start", "ecosystem.config.js" ]
